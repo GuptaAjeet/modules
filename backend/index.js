@@ -1,9 +1,12 @@
+require('dotenv').config()
 const express = require('express');
 const app = express();
 
+app.use(express.json());
+
 const router = require("./routes/index");
 
-app.use('/', ()=>console.log("call---------"),router);
+app.use('/', router);
 
 // Start your server
 const PORT = process.env.PORT || 3000;

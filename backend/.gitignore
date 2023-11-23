@@ -13,7 +13,7 @@
 # production
 
 # misc
-.env
+# .env
 
 
 package-lock.json

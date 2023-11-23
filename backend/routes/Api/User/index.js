@@ -1,9 +1,9 @@
 const express = require("express");
 const router = express.Router();
-const { DB_TYPE='postgres' } = process.env;
+const { DB_TYPE } = process.env;
 
 const userController = require(`../../../controllers/${DB_TYPE}/User`);
 
-router.get("/list", ()=>console.log("call---------333333333333"),userController.list);
+router.get("/list", userController.list);
 
 module.exports = router;

@@ -4,7 +4,7 @@ const router = express.Router();
 const userRoutes = require("./User");
 
 
-router.use("/user", ()=>console.log("call---------2222222222"),userRoutes);
+router.use("/user", userRoutes);
 
 module.exports = router;
 
